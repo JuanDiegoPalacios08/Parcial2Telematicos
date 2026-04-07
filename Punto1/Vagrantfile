@@ -1,0 +1,24 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "bento/ubuntu-22.04"
+  config.vm.boot_timeout = 600
+
+  config.vm.define "servidor1" do |servidor1|
+    servidor1.vm.hostname = "servidor1"
+    servidor1.vm.network "private_network", ip: "192.168.50.3"
+
+    servidor1.vm.provider "virtualbox" do |vb|
+      vb.memory = 2048
+      vb.cpus = 2
+    end
+  end
+
+  config.vm.define "servidor2" do |servidor2|
+    servidor2.vm.hostname = "servidor2"
+    servidor2.vm.network "private_network", ip: "192.168.50.2"
+
+    servidor2.vm.provider "virtualbox" do |vb|
+      vb.memory = 2048
+      vb.cpus = 2
+    end
+  end
+end

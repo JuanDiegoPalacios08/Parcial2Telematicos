@@ -20,13 +20,7 @@ El cliente se conecta al servidor mediante el puerto 22 (SSH), el cual es contro
 ---
 
 ## Contenido del repositorio
-
-- `punto3/15_openssh.md`: Configuración y verificación del servicio OpenSSH  
-- `punto3/16_ufw.md`: Configuración y pruebas del firewall UFW  
-- `punto3/17_sftp.md`: Conexión y operaciones SFTP  
-- `punto3/18_wireshark.md`: Captura y análisis de tráfico SFTP  
-- `punto3/19_tabla.md`: Comparación entre FTPS y SFTP  
-- `capturas/`: Evidencias de cada uno de los puntos  
+`Punto 3`
 
 ---
 
